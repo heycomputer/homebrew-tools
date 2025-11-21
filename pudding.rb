@@ -5,21 +5,21 @@
 class Pudding < Formula
   desc "Use version-aware fuzzy-search to quickly find the _right_ documentation from your project's dependencies and cache them locally for fast access anytime."
   homepage "https://github.com/heycomputer/pudding"
-  version "0.0.1"
+  version "0.0.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/heycomputer/pudding/releases/download/v0.0.1/pudding_0.0.1_darwin_amd64.tar.gz"
-      sha256 "1e20df66c9f2409b13b6b48f001a55c8d78e57da45aea2721b4e9c056dc0c6c6"
+      url "https://github.com/heycomputer/pudding/releases/download/v0.0.2/pudding_0.0.2_darwin_amd64.tar.gz"
+      sha256 "c5d75a196eff667fdc308144db0d035bb6f99a1526aaea1c32194e9518185b89"
 
       def install
         bin.install "pd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/heycomputer/pudding/releases/download/v0.0.1/pudding_0.0.1_darwin_arm64.tar.gz"
-      sha256 "56044d608e2275b1b564fc3440cf4f67bdf1176e0517b1968361755c97ed3dcb"
+      url "https://github.com/heycomputer/pudding/releases/download/v0.0.2/pudding_0.0.2_darwin_arm64.tar.gz"
+      sha256 "9211b2c2334dd0adb56b1deac62bf5cec37be485e071e16e08714d423f230bd3"
 
       def install
         bin.install "pd"
@@ -29,15 +29,15 @@ class Pudding < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heycomputer/pudding/releases/download/v0.0.1/pudding_0.0.1_linux_amd64.tar.gz"
-      sha256 "a452f308d14c3c1b70e57c05a0d60e44f2200ae8a258aabeaeb4271487edbe2c"
+      url "https://github.com/heycomputer/pudding/releases/download/v0.0.2/pudding_0.0.2_linux_amd64.tar.gz"
+      sha256 "a718124f48472c085acf43257a0cde3bbf43fbd8c181af6ea29e7af0253f26ab"
       def install
         bin.install "pd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/heycomputer/pudding/releases/download/v0.0.1/pudding_0.0.1_linux_arm64.tar.gz"
-      sha256 "eedbf4a9a1c7cb8d26299a52f9e2ad505b2c2dd4cfc2114255d2bbf5db3c8539"
+      url "https://github.com/heycomputer/pudding/releases/download/v0.0.2/pudding_0.0.2_linux_arm64.tar.gz"
+      sha256 "36ea4907ec7193b9047e705a06e71b531d12077cb2cd118edf4541bb7dcd6c76"
       def install
         bin.install "pd"
       end
